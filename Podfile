@@ -5,6 +5,4 @@ target 'NEUtility' do
 pod 'MBProgressHUD'
 end
 
-target 'NEUtilityTests' do
 
-end

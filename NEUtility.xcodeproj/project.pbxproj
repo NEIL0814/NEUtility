@@ -14,7 +14,6 @@
 		28E9D4691D818D91008D6616 /* NEView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E9D44F1D818CA5008D6616 /* NEView.m */; };
 		28E9D46A1D818D91008D6616 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = F096ACF01D7FF59600483796 /* Utility.m */; };
 		28F40EB81D94C5FC004F56AB /* NEBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F40EB71D94C5FC004F56AB /* NEBaseViewController.m */; };
-		303B4A8AD9C76AB69A30C721 /* libPods-NEUtilityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6057155A8AC62A376383DD65 /* libPods-NEUtilityTests.a */; };
 		978905B98A8FA12A4D8FD81A /* libPods-NEUtility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E35F22D9F32128FE2CA1F93 /* libPods-NEUtility.a */; };
 		F096ACD81D7FF15200483796 /* NEUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F096ACD71D7FF15200483796 /* NEUtilityTests.m */; };
 /* End PBXBuildFile section */
@@ -50,8 +49,6 @@
 		28E9D4751D8192A9008D6616 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		28F40EB61D94C5FC004F56AB /* NEBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEBaseViewController.h; sourceTree = "<group>"; };
 		28F40EB71D94C5FC004F56AB /* NEBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEBaseViewController.m; sourceTree = "<group>"; };
-		2C9D37A267C81062626D49FE /* Pods-NEUtilityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEUtilityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NEUtilityTests/Pods-NEUtilityTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2F085F32994BEF84AAA14BC1 /* Pods-NEUtilityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEUtilityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NEUtilityTests/Pods-NEUtilityTests.release.xcconfig"; sourceTree = "<group>"; };
 		6057155A8AC62A376383DD65 /* libPods-NEUtilityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NEUtilityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		854962C9F7D8730731577F7C /* Pods-NEUtility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEUtility.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NEUtility/Pods-NEUtility.debug.xcconfig"; sourceTree = "<group>"; };
 		9DC47F6FE981EC302354AB49 /* Pods-NEUtility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEUtility.release.xcconfig"; path = "Pods/Target Support Files/Pods-NEUtility/Pods-NEUtility.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				303B4A8AD9C76AB69A30C721 /* libPods-NEUtilityTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +93,6 @@
 			children = (
 				854962C9F7D8730731577F7C /* Pods-NEUtility.debug.xcconfig */,
 				9DC47F6FE981EC302354AB49 /* Pods-NEUtility.release.xcconfig */,
-				2C9D37A267C81062626D49FE /* Pods-NEUtilityTests.debug.xcconfig */,
-				2F085F32994BEF84AAA14BC1 /* Pods-NEUtilityTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -190,12 +184,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F096ACDF1D7FF15200483796 /* Build configuration list for PBXNativeTarget "NEUtilityTests" */;
 			buildPhases = (
-				6D8BFC4EEFE6F75F214563F3 /* [CP] Check Pods Manifest.lock */,
 				F096ACCE1D7FF15200483796 /* Sources */,
 				F096ACCF1D7FF15200483796 /* Frameworks */,
 				F096ACD01D7FF15200483796 /* Resources */,
-				C0B49585AC861C15268141B9 /* [CP] Embed Pods Frameworks */,
-				3A7C4CBF572A4ECF2EA47F97 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,21 +258,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		3A7C4CBF572A4ECF2EA47F97 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NEUtilityTests/Pods-NEUtilityTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3BA68DCD716B418C74665876 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,36 +271,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NEUtility/Pods-NEUtility-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6D8BFC4EEFE6F75F214563F3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C0B49585AC861C15268141B9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NEUtilityTests/Pods-NEUtilityTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -479,7 +425,6 @@
 		};
 		F096ACE01D7FF15200483796 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C9D37A267C81062626D49FE /* Pods-NEUtilityTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = NEUtilityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -490,7 +435,6 @@
 		};
 		F096ACE11D7FF15200483796 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F085F32994BEF84AAA14BC1 /* Pods-NEUtilityTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = NEUtilityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

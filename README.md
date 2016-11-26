@@ -6,9 +6,9 @@ Utility for iOS development
 [![License](https://img.shields.io/cocoapods/l/NEUtility.svg?style=flat)](http://cocoapods.org/pods/NEUtility)
 [![Platform](https://img.shields.io/cocoapods/p/NEUtility.svg?style=flat)](http://cocoapods.org/pods/NEUtility)
 
-## Usage
+# Usage
 
-#Simple usage
+##Simple usage
 include it in header
 ```objective-c
 #inclue "NEUtility.h"
@@ -26,10 +26,10 @@ UIColorWithARGB(1, 1, 1, 1)
 DLog(@"Hello world!");
 ```
 
-#NEAnalogView
+##NEAnalogView
 This is a view build with UIView, it is trying to simulate AnalogView.
 
-#NEButton / NEView / NEImageView
+##NEButton / NEView / NEImageView
 It can also use in storyboard
 
 cornerRadius : To make a round corner button without 1 line coding :)
@@ -50,7 +50,7 @@ pod "NEUtility"
 
 ## Author
 
-NEIL, lchb1988@gmail.com
+NEIL, 522989049@qq.com
 
 ## License
 
