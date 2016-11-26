@@ -15,7 +15,7 @@
 #import "NELanguageManager.h"
 #import "NEBaseViewController.h"
 #import "Utility.h"
-#import "MBProgressHUD.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 
 #define NEString(key) [[NELanguageManager sharedManager] getLocalizedString:key]

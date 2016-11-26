@@ -7,7 +7,6 @@
 //
 
 #import "NEBaseViewController.h"
-#import "MBProgressHUD.h"
 #import "NEUtility.h"
 
 @interface NEBaseViewController ()
